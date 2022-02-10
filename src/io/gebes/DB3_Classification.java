@@ -20,6 +20,7 @@ public class DB3_Classification {
         System.out.println(Arrays.toString(classification(new int[]{2, 9, 3, 5, 7, 4, 4})));
         System.out.println(Arrays.toString(classification(new int[]{2, 3, 4, 5, 6, 7, 8, 9, 10})));
         System.out.println(Arrays.toString(classification(new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8})));
+        System.out.println(Arrays.toString(classification(new int[]{0, 1, 2, 3, 4, 5, 6, 700, 8})));
         System.out.println(Arrays.toString(classification(new int[]{})));
     }
 
@@ -51,7 +52,7 @@ public class DB3_Classification {
         int current = 0;
         boolean search = false;
 
-        for (int i = 1; i <= nums.length; i++) {
+        for (int i = 1; i <= max; i++) {
             if (inc.contains(i)) {
                 if (search) {
                     toSub.put(i, current);
