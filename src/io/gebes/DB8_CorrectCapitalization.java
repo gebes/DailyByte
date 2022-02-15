@@ -30,8 +30,7 @@ public class DB8_CorrectCapitalization {
         if (!f && s) return false;
 
         for (int i = 2; i < n.length(); i++) {
-            if (f && s && !Character.isUpperCase(n.charAt(i)) || (!f || !s) && Character.isUpperCase(n.charAt(i))
-            ) {
+            if (f && s && !Character.isUpperCase(n.charAt(i)) || (!f || !s) && Character.isUpperCase(n.charAt(i))) {
                 return false;
             }
         }
